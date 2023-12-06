@@ -1,0 +1,733 @@
+@font-face {
+    font-family : 'giants-bold';
+    src : url(폰트/Giants-Bold.otf)
+  }
+@font-face {
+    font-family : 'giants-inline';
+    src : url(폰트/Giants-Inline.otf)
+  }
+@font-face {
+    font-family : 'giants-regular';
+    src : url(폰트/Giants-Regular.otf)
+  }
+  body{
+    height: 11854px;
+    overflow-x: hidden;
+  }
+header{
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 12px 32px;
+    z-index: 100;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+
+}
+#content-webper{
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    position: fixed;
+}
+#header-contents{
+    width:100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.bisco-rogo{
+    display: block;
+    width: 187px;
+    height: 65px;
+    background-image: url(img/부산시설공단로고.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main-rogo{
+    width: 122px;
+    height: 67px;
+    background-image: url(img/메인ㄹ고.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.hambutton{
+    width: 48px; 
+    height: 48px;
+    padding : 12px;
+    box-sizing: border-box;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    position: relative;
+    cursor: pointer;
+}
+
+.hambutton > span { 
+    display: block;
+    width: 24px;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: 0.5s;
+}
+
+.hambutton > span:first-child {
+    transform: translate(-50%,calc(-50% - 6px))
+}
+.hambutton > span:last-child {
+    transform: translate(-50%,calc(-50% + 6px))
+}
+
+.hambutton.active > span:first-child {
+    transform: translate(-50%,-50%) rotate(45deg)
+}
+.hambutton.active > span:nth-child(2) {
+    opacity: 0;
+}
+.hambutton.active > span:last-child {
+    transform: translate(-50%,-50%) rotate(-45deg)
+}
+section{
+    flex-shrink: 0;
+    padding-top: 91px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.main-vidio{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: relative;
+}
+video{
+    width:100vw;
+    object-fit: contain;
+}
+.news{
+    width: 100vw;
+    height: 90px;
+    padding: 0 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;  
+    background-color: aliceblue ;
+    position: absolute;
+    bottom: 0;
+}
+.news-titel{
+    color: #204776;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    font-family: 'giants-bold';
+    line-height: normal;
+    text-transform: uppercase;
+}
+.news-list{
+    display: flex;
+    padding: 14px 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 62px;
+    align-self: stretch;
+}
+
+.news-list>a>p{
+    color: #262626;
+    font-family: 'giants-regular';
+    font-size: 16px;
+    font-style: normal;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+#game-schedule{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background: #1D95EC;
+}
+.today-game-place{
+    width: 50%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-image:linear-gradient(13deg, #0000007a, #0000007a),url(img/경기일정사진.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+.today-game{
+    display: flex;
+    width: 70%;
+    height: 50%;
+    padding: 32px;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    border-radius: 16px;
+    background: rgba(16, 35, 59, 0.80);
+    animation: bounce-top-50 1s infinite;
+}
+.game-title{
+    color: #FFF;
+    text-align: center;
+    font-family: 'giants-bold';
+    font-size: 24px;
+    font-style: normal;
+    line-height: normal;
+}
+.day-and-time{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 32px;
+    color: #FFF;
+}
+.game-day{
+    color: #FFF;
+    text-align: center;
+    font-family: 'giants-regular';
+    font-size: 20px;
+    font-style: normal;
+    line-height: normal;
+}
+.game-time{
+    color: #FFF;
+    text-align: center;
+    font-family: 'giants-regular';
+    font-size: 20px;
+    font-style: normal;
+    line-height: normal;
+}
+.match-teams{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 56px;
+}
+.match-teams > img{
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+.match-teams > p{
+    color: #FFF;
+    text-align: center;
+    font-family: 'giants-bold';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.stadium-live{
+    color: #FFF;
+    text-align: center;
+    font-family: 'giants-regular';
+    font-size: 16px;
+    font-style: normal;
+    line-height: normal;
+}
+
+@keyframes bounce-top-50 {
+    0% {
+        transform: scale(1);
+    }
+    5%{
+        transform: scale(1.05);
+    }
+    20%{
+        transform: scale(1);
+    }
+    30%{
+        transform: scale(1.025);
+    }
+    100%{
+        transform: scale(1);
+    }
+
+}
+.game-list-page{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+.game-list{
+    width: 86%;
+    display: flex;
+    height: 76%;
+    padding: 32px 16px;
+    flex-direction: column;
+    place-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 16px;
+    background: rgba(13, 50, 94, 0.60);
+}
+h2{
+    color: #FFF8F8;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.heading-bold{
+    color: #FFF8F8;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.information{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.schedule{
+    display: flex;
+    gap: 12px;
+    color: #FFF8F8;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    align-items: center;
+}
+.team-score{
+    display: flex;
+    height: 50px;
+    padding-right: 0px;
+    align-items: center;
+    gap: 32px;
+}
+.team-match-left{
+    display: flex;
+    width: 181px;
+    height: 50px;
+    padding-right: 0px;
+    align-items: center;
+    gap: 12px;
+    justify-content: flex-end;
+}
+.score-board{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.team-match-right{
+    display: flex;
+    width: 180px;
+    height: 50px;
+    padding-right: 0px;
+    align-items: center;
+    gap: 12px; 
+}
+.team-match-left > img{
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+.team-match-right > img{
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+.team-match-left > p{
+    color: #FFF8F8;
+    font-size: 14px;
+    font-weight: bold;
+}
+.team-match-right > p{
+    color: #FFF8F8;
+    font-size: 14px;
+    font-weight: bold;
+}
+.place-score{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #F5F5F5;
+    font-size: 12px;
+}
+#players-page{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(to right,#000046,#1CB5E0);
+}
+.live{
+    font-size: 12px;
+    color: #F5F5F5;
+}
+.game-list>a{
+    color: #F5F5F5;
+    font-size: 14px;
+    font-weight: bold;
+}
+h3{
+    color: #FFF;
+    text-align: center;
+    font-family: 'giants-bold';
+    font-size: 26px;
+    font-style: normal;
+    line-height: normal;
+    padding:32px;
+}
+.players{
+    display: flex;
+    width: 100%;
+    padding-top: 16px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    gap: 32px;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+}
+.player-profile{
+    width: 180px;
+    height: 180px;
+    display: flex;
+}
+.player-name{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: -6px;
+    color: #F5F5F5;
+    -webkit-text-stroke:1px #040404;
+}
+.player-name>p{
+    font-family: 'giants-regular';
+}
+.name{
+    text-align: center;
+    font-size: 22px;
+    font-style: normal;
+    line-height: normal;
+}
+.player-number{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    font-family: 'giants-regular';
+    color: #f5f5f5;
+    -webkit-text-stroke: 1px #040404;
+}
+.number{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 400;
+}
+.profile-taxt{
+    width: 180px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2px;
+    position: absolute;
+    transform: translateY(220%);
+    justify-content: space-between;
+}
+.player-profile > img {
+    width: 100%;
+    height: 100%;
+}
+.staff-profile{
+    width: 180px;
+}
+.Coaching-staff{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 16px;
+    justify-content: center;
+}
+.staff-profile > img{
+    width: 100%;
+    height: 100%;
+}
+.staff-taxt{
+    width: 180px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2px;
+    position: absolute;
+    transform: translateY(-98%);
+    font-family: 'giants-regular';
+    color: #ffff;
+    -webkit-text-stroke: 1px #040404;
+}
+.staff-profile > p{
+    font-family: 'giants-regular';
+}
+.player-profile:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: 0.4s;
+}
+.staff-profile:hover{
+    transform: scale(1.2);
+    transition: 0.4s;
+}
+#history{
+    width: fit-content;
+    height: 100vh;
+    background-color: #052952;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.Introduction{
+    display: flex;
+    height:100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    flex-shrink:0;
+}
+.Introduction>img{
+    width: 100%;
+    height: 56%;
+    filter: brightness(0.5);
+}
+.introduction-text-container{
+    gap: 26px;
+}
+.Introduction-taxt{
+    color: #FFFDFD;
+    text-align: center;
+    font-family: 'giants-regular';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    padding-bottom: 14px;
+}
+.history-result{
+    height: 88%;
+    display: flex;
+    flex-direction:column;
+    padding: 32px;
+    box-sizing:border-box;
+}
+h4{
+    color: #FFF;
+    font-family: 'giants-bold';
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 400;
+}
+.history-title-wrapper{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding-top: 22px;
+    align-items: center;
+    gap: 32px;
+    box-sizing: border-box;
+}
+.result-grade{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.history-title-content{
+    display: flex;
+    width: 450px;
+    height: 100%;
+    padding: 16px 0px;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    gap: 26px;
+    border-radius: 16px;
+    background: rgba(29, 149, 236, 0.43);
+    justify-content: space-around;
+}
+.history-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h5{
+    color: #FFFDFD;
+    text-align: center;
+    font-family: 'giants-bold';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 203.023%; 
+}
+.history-img{
+    width: 100%;
+    height: 45%;
+    object-fit: cover;
+}
+.title-result{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    color: #F5F5F5;
+    font-family: 'giants-regular';
+    font-size: 26px;
+}
+
+.grade{
+    font-size: 30px;
+    font-family: 'giants-bold';
+}
+.team-symbol{
+    width: 100vw;
+    padding-top: 107px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background-image: linear-gradient(13deg, rgba(0, 0, 0, 0.48), rgba(0, 0, 0, 0.48)),url(img/유니폼뒷사진.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-color:#052952;    
+    flex-direction: column;
+    gap: 18px;
+}
+h6{
+    color: #121212;
+    text-align: center;
+    font-family: 'giants-inline';
+    font-size: 24px;
+}
+.cl{
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 16px;
+    background-color: rgba(255, 255, 255, 0.50);
+}
+.cl-rogo{
+    display: flex;
+    align-items: center;
+    gap: 58px;
+}
+.cl-rogo > img {
+    width: 180px;
+    height: 180px;
+    object-fit:contain;
+}
+.uniform{
+    display: flex;
+    padding: 10px 32px 16px 32px;
+    align-items: flex-start;
+    gap: 50px;
+}
+.field{
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 16px;
+    background-color: rgba(255, 255, 255, 0.50);
+}
+.player-uniform{
+    display: flex;
+
+}
+.uniform-color{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+.uniform-color> img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+.color-taxt {
+    font-size: 14px;
+    font-weight: 600;
+}
+.uniform-button{
+    border: 2px solid #00000022;
+    padding: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 4px;
+    background-color: transparent;
+}
+.uniform-button:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: 0.4s;
+}
+footer{
+    width: 100vw;
+    padding-top:91px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    gap:62px;
+    background-color: #052952;
+    flex-shrink: 0;
+}
+.sponsor{
+    display: flex;
+    gap: 32px;
+}
+.footer-rogo{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.Sponsor-rogo{
+    background-color: #FFF8F8;
+    width: 200px;
+    height: 150px;
+    padding: 16px;
+    border-radius: 16px;
+}
+.Sponsor-rogo>img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.footer-text{
+    display: flex;
+    align-items: flex-start;
+    gap: 47px;
+    color: #b3b3b3;
+}
+
