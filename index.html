@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
     
 </head>
 <body>
@@ -21,19 +22,19 @@
             <div class="hambutton-cilck">
                 <ul class="hammenu">
                     <li class="hammenulist">
-                        <span class="hamspan">구단소개</span>
+                        <span class="hamspan" onclick="changeColor(this)">구단소개</span>
                     </li>
                     <li class="hammenulist">
-                        <span class="hamspan">선수소개</span>
+                        <span class="hamspan" onclick="changeColor(this)">선수소개</span>
                     </li>
                     <li class="hammenulist">
-                        <span class="hamspan">구단상징</span>
+                        <span class="hamspan" onclick="changeColor(this)">구단상징</span>
                     </li>
                     <li class="hammenulist">
-                        <span class="hamspan">경기일정</span>
+                        <span class="hamspan" onclick="changeColor(this)">경기일정</span>
                     </li>
                     <li class="hammenulist">
-                        <span class="hamspan">스폰서</span>
+                        <span class="hamspan" onclick="changeColor(this)">스폰서</span>
                     </li>
                 </ul>
             </div>
@@ -806,5 +807,7 @@
     window.addEventListener('scroll', () => {
         contentWebper.style.transform = `translateX(-${window.scrollY}px)`
     })
+
+
 </script>
 </html>
