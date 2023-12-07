@@ -97,6 +97,26 @@ header{
 .hambutton.active > span:last-child {
     transform: translate(-50%,-50%) rotate(-45deg)
 }
+
+.hambutton-cilck{
+    transform: translate3d(174%, 106%, 0);
+    background-color: rgba(16, 35, 59, 0.80);
+    position: absolute;
+}
+.hammenu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding:32px;
+    gap: 32px;
+}
+.hammenulist{
+    color: #F5F5F5;
+    font-family: 'giants-bold';
+    font-size: 20px;
+    font-weight: 700;
+}
 section{
     flex-shrink: 0;
     padding-top: 91px;
@@ -657,7 +677,6 @@ h6{
 }
 .player-uniform{
     display: flex;
-
 }
 .uniform-color{
     display: flex;
@@ -686,6 +705,15 @@ h6{
     cursor: pointer;
     transform: scale(1.2);
     transition: 0.4s;
+}
+.uniform-detail{
+    width: 280%;
+    height: 290%;
+    align-items: center;
+}
+.uniform-detail>img{
+    width: 100%;
+    height: 100%;
 }
 footer{
     width: 100vw;
