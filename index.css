@@ -24,8 +24,7 @@ header{
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
-    background-color: rgb(255, 255, 255);
-
+    background-color: aliceblue ;
 }
 #content-webper{
     display: flex;
@@ -42,7 +41,6 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 .bisco-rogo{
     display: block;
@@ -140,9 +138,6 @@ header{
 .hammenulist.nav-active {
     color: #1CB5E0;
 }
-.hammenulist{
-
-}
 
 section{
     flex-shrink: 0;
@@ -218,7 +213,6 @@ video{
 .today-game{
     display: flex;
     width: 70%;
-    height: 50%;
     padding: 32px;
     flex-direction: column;
     align-items: center;
@@ -371,7 +365,7 @@ h2{
     justify-content: flex-end;
 }
 .score-board{
-    display: inline-flex;
+    display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -405,7 +399,7 @@ h2{
     font-weight: bold;
 }
 .place-score{
-    display: inline-flex;
+    display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -419,8 +413,9 @@ h2{
     box-sizing: border-box;
     flex-direction: column;
     justify-content: space-between;
-    background: linear-gradient(to right,#000046,#1CB5E0);
+    background: linear-gradient(to bottom right,#052952 0%, #052952 50%, #F5F5F5 50%, #F5F5F5 100%);
 }
+
 .live{
     font-size: 12px;
     color: #F5F5F5;
@@ -441,7 +436,7 @@ h3{
 }
 .players{
     display: flex;
-    width: 100%;
+    width: 100vw;
     padding-top: 16px;
     align-items: center;
     align-content: center;
@@ -456,7 +451,7 @@ h3{
     display: flex;
 }
 .player-name{
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     gap: -6px;
@@ -784,5 +779,183 @@ footer{
     align-items: flex-start;
     gap: 47px;
     color: #b3b3b3;
+}
+@media screen and (max-width:800px) {
+  
+    body{
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
+    header {
+        padding: 16px;
+
+    }
+    .bisco-rogo{
+        width: 130px;
+    }
+    .main-rogo{
+        width: 100px;
+        top: 9px;
+    }
+    .hambutton{
+        display: none;
+    }
+    .news{
+        height: 25%;
+        gap: 50px;  
+    }
+    .news-titel{
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .news-list{
+        padding: 16px;
+        gap: 28px;
+    }
+    .news-list>a>p{
+        font-size: 12px;
+        font-style: normal;
+        line-height: normal;
+        text-decoration-line: underline;
+    }
+    video{
+        width:100%;
+        height:500px;
+        background-color: #052952;
+        object-fit: contain;
+    }
+    #game-schedule{
+        background-image: linear-gradient(13deg, #0000007a, #0000007a),url(img/경기일정사진.jpg);
+    }
+    .today-game{
+        width: 300px;
+        padding: 16px;
+        align-items: center;
+    }
+    .today-game-place{
+        background-image: none;
+    }
+    .game-title{
+        font-size: 16px;
+    }
+    .day-and-time{
+        gap: 16px;
+    }
+    .game-list{
+        padding: 16px;
+        gap: 32px;
+        background: none;
+        background: rgba(16, 35, 59, 0.80);
+    }
+    .game-day{
+        font-size: 14px;
+    }
+    .game-time{
+        font-size: 14px;
+    }
+    .match-teams{
+        gap: 26px;
+    }
+    .match-teams > img{
+        width: 85px;
+        height: 85px;
+    }
+    .match-teams > p{
+        font-size: 16px;
+    }
+    .stadium-live{
+        font-size: 12px;
+    }
+    h2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 16px;
+    }
+    .heading-bold{
+        font-size: 16px;
+    }
+    .team-match-left > p{
+        display: none;
+    }
+    .team-match-right > p {
+        display: none;
+    }
+    .information{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .schedule-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .information:nth-child(n+9) {
+        display: none;
+    }
+    .schedule{
+        flex-direction: column;
+        font-size: 12px;
+        gap: 6px;
+    }
+    .team-score{
+        padding: 0;
+        gap:0;
+    }
+    .team-match-left{
+        display: flex;
+        width: 50px;
+        height: 50px;
+        padding: 8px;
+        gap: 0;
+    }
+    .team-match-right{
+        display: flex;
+        width: 50px;
+        height: 50px;
+        padding: 8px;
+        gap: 0;
+    }
+    .place-score{
+        font-size: 14px;
+    }
+    .place{
+        font-size: 10px;
+    }
+    .players{
+        gap: 16px;
+    }
+    .player-profile{
+        width: 100px;
+        height: 100px;
+        padding-right: 32px;
+    }
+    .profile-taxt{
+        width: 100px;
+    }
+    .player-name{
+        font-size: 12px;
+    }
+    .name{
+        font-size: 16px;
+    }
+    .player-number{
+        font-size: 12px;
+    }
+    .number{
+        font-size: 16px;
+    }
+    .staff-profile{
+        width: 100px;
+    }
+    .staff-taxt{
+        width: 100px;    
+    }
+}
+@media screen and (max-width:375px) {
+    
 }
 
