@@ -11,7 +11,7 @@
     src : url(폰트/Giants-Regular.otf)
   }
   body{
-    height: 11854px;
+    height: auto;
     overflow-x: hidden;
   }
 header{
@@ -780,27 +780,35 @@ footer{
     gap: 47px;
     color: #b3b3b3;
 }
-@media screen and (max-width:800px) {
+@media screen and (max-width:1365px) {
   
     body{
-        width: 100%;
-        height: 100%;
-        display: flex;
+        height: auto;
     }
     header {
         padding: 16px;
-
+    }
+    section{
+        padding-top: 0;
     }
     .bisco-rogo{
-        width: 130px;
-    }
-    .main-rogo{
-        width: 100px;
-        top: 9px;
+        display: none;
     }
     .hambutton{
         display: none;
     }
+    #header-contents{
+        align-items: center;
+        justify-content: center;
+    }
+
+    #content-webper {
+        flex-direction: column;
+        position: relative;
+    }
+
+
+
     .news{
         height: 25%;
         gap: 50px;  
@@ -825,16 +833,28 @@ footer{
         background-color: #052952;
         object-fit: contain;
     }
+    .main-vidio{
+        padding-top: 91px;
+        height: 790px;
+    }
     #game-schedule{
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        padding: 32px;
+        gap: 32px;
+        background-size: cover;   
         background-image: linear-gradient(13deg, #0000007a, #0000007a),url(img/경기일정사진.jpg);
     }
     .today-game{
-        width: 300px;
+        width: 500px;
         padding: 16px;
         align-items: center;
     }
     .today-game-place{
+        width: 500px;
         background-image: none;
+        height: auto;
     }
     .game-title{
         font-size: 16px;
@@ -843,10 +863,11 @@ footer{
         gap: 16px;
     }
     .game-list{
+        width: auto;
         padding: 16px;
         gap: 32px;
-        background: none;
-        background: rgba(16, 35, 59, 0.80);
+        background-color:rgba(16, 35, 59, 0.80);
+        border-radius: 16px;
     }
     .game-day{
         font-size: 14px;
@@ -858,8 +879,8 @@ footer{
         gap: 26px;
     }
     .match-teams > img{
-        width: 85px;
-        height: 85px;
+        width: 100px;
+        height: 100px;
     }
     .match-teams > p{
         font-size: 16px;
@@ -867,31 +888,33 @@ footer{
     .stadium-live{
         font-size: 12px;
     }
+    .game-list-page{
+        width: 550px;
+    }
     h2{
         display: flex;
         flex-direction: column;
         align-items: center;
-        font-size: 16px;
+        font-size: 18px;
     }
     .heading-bold{
-        font-size: 16px;
-    }
-    .team-match-left > p{
-        display: none;
-    }
-    .team-match-right > p {
-        display: none;
+        font-size: 18px;
     }
     .information{
         display: flex;
+        width: auto;
         justify-content: space-between;
         align-items: center;
+        padding: 12px;
+        border-bottom: 1px solid #ffff;
+
     }
     .schedule-container{
         display: flex;
+        gap: 16px;
         flex-direction: column;
         justify-content: space-between;
-        width: 100%;
+        width: 550px;
     }
     .information:nth-child(n+9) {
         display: none;
@@ -907,23 +930,25 @@ footer{
     }
     .team-match-left{
         display: flex;
-        width: 50px;
-        height: 50px;
-        padding: 8px;
+        flex-direction: column;
+        justify-content: flex-end;
         gap: 0;
     }
     .team-match-right{
         display: flex;
-        width: 50px;
-        height: 50px;
-        padding: 8px;
+        flex-direction: column;
+        justify-content:center;
         gap: 0;
     }
     .place-score{
-        font-size: 14px;
+        gap: 6px;
+        font-size: 16px;
+        font-weight: 600;
     }
     .place{
-        font-size: 10px;
+        width: 78px;
+        font-size: 11px;
+        font-weight: 300;
     }
     .players{
         gap: 16px;
@@ -955,7 +980,7 @@ footer{
         width: 100px;    
     }
 }
-@media screen and (max-width:375px) {
+@media screen and (max-width:800px) {
     
 }
 
