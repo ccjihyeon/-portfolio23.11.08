@@ -601,11 +601,11 @@ h4{
     display: flex;
     width: 450px;
     height: 100%;
-    padding: 16px 0px;
+    padding: 32px 0px;
     box-sizing: border-box;
     flex-direction: column;
     align-items: center;
-    gap: 56px;
+    gap: 30px;
     border-radius: 16px;
     background: rgba(29, 149, 236, 0.43);
     
@@ -790,6 +790,8 @@ footer{
     }
     section{
         padding-top: 0;
+        padding-top: 32px;
+        padding-bottom: 32px;
     }
     .bisco-rogo{
         display: none;
@@ -841,7 +843,7 @@ footer{
         height: auto;
         flex-direction: column;
         align-items: center;
-        padding: 32px;
+        padding:32px;
         gap: 32px;
         background-size: cover;   
         background-image: linear-gradient(13deg, #0000007a, #0000007a),url(img/경기일정사진.jpg);
@@ -907,7 +909,6 @@ footer{
         align-items: center;
         padding: 12px;
         border-bottom: 1px solid #ffff;
-
     }
     .schedule-container{
         display: flex;
@@ -940,6 +941,11 @@ footer{
         justify-content:center;
         gap: 0;
     }
+    #players-page{
+        width: 100%;
+        height: auto;
+        padding-bottom: 32px;
+    }
     .place-score{
         gap: 6px;
         font-size: 16px;
@@ -951,7 +957,9 @@ footer{
         font-weight: 300;
     }
     .players{
-        gap: 16px;
+        padding: 16px;
+        height: auto;
+        padding-bottom: 32px;
     }
     .player-profile{
         width: 100px;
@@ -978,6 +986,42 @@ footer{
     }
     .staff-taxt{
         width: 100px;    
+    }
+    #history{
+        height: auto;
+        overflow: auto;
+        flex-direction: column;
+        padding-top: 0;
+    }
+    .Introduction{
+        width: 100%;
+        height: auto;
+        background-color:rgba(29, 149, 236, 0.43);
+        padding-bottom: 32px;
+    }
+    .history-result{
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+    }
+    .history-title-wrapper{
+        flex-direction: column;
+    }
+    .team-symbol{
+        padding: 32px;
+        gap: 32px;
+    }
+    .uniform{
+        flex-direction: column;
+    }
+    footer{
+        padding: 32px;
+    }
+    .Sponsor-rogo{
+        width: 130px;
+        height: 130px;
+        padding: 12px;
+
     }
 }
 @media screen and (max-width:800px) {
