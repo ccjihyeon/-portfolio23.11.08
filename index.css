@@ -496,9 +496,64 @@ h3{
     width: 100%;
     height: 100%;
 }
-.staff-profile{
-    width: 180px;
+.profile-sup{
+    width: 30%;
+    display: flex;
+    padding: 16px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 16px;
+    background: rgba(33, 85, 149, 0.8)
 }
+.sup-text{
+    display: flex;
+    width: 100%;
+    gap: 40px;
+    align-items: center;
+    flex-direction: column;
+}
+.position-name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.position-name>p{
+    color: #121212;
+    font-family: 'giants-regular';
+    font-size: larger;
+    font-weight: 400;
+}
+.number-name{
+    display: flex;
+    font-size: x-large;
+    font-family: 'giants-bold';
+    color: #121212;
+    gap: 6px;
+}
+.red-number{
+    color: #d20000;
+}
+.detail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+.personal{
+    display: flex;
+    font-size: small;
+    font-family: 'giants-regular';
+    justify-content: center;
+    gap: 16px;
+}
+.bold{
+    font-weight: 600;
+}
+.profile-sup>img{
+    width: 50%;
+}
+
 .Coaching-staff{
     display: flex;
     align-items: center;
