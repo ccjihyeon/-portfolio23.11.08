@@ -501,14 +501,13 @@ h3{
     width: 100vw;
     height: 100vh;
     background: #000000BB;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
 }
 .profile-sup{
-    width: 30%;
+    width: 40%;
     display: flex;
-    padding: 16px;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
@@ -1136,6 +1135,25 @@ footer{
     .staff-taxt{
         width: 90px;
     }
+    .personal{
+        align-items: center;
+        font-size: 10px;
+        flex-direction: column;
+        gap: 6px;
+    }
+    .sup-text{
+        gap: 22px;
+        padding: 12px;
+    }
+    .detail{
+        gap: 14px;
+    }
+    .position-name>p{
+        font-size: small;
+    }
+    .number-name{
+        font-size: small;
+    }
     
     #history{
         width: 100vw;
@@ -1185,6 +1203,7 @@ footer{
         font-size: 10px;
         gap: 12px;
     }
+
 
 }
 
