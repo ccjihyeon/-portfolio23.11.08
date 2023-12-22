@@ -802,6 +802,12 @@ h6{
     width: 100%;
     height: 100%;
 }
+.uniform-text{
+    color: #F5F5F5;
+    align-items: center;
+}
+
+
 footer{
     width: 100vw;
     padding-top:91px;
@@ -855,8 +861,8 @@ footer{
     }
     section{
         padding-top: 0;
-        padding-top: 32px;
-        padding-bottom: 32px;
+        padding-top: 16px;
+        padding-bottom: 16px;
     }
     .bisco-rogo{
         display: none;
@@ -872,6 +878,7 @@ footer{
     #content-webper {
         flex-direction: column;
         position: relative;
+        width: 100%;
     }
 
 

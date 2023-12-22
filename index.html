@@ -709,28 +709,19 @@
                     <h6>부산Bisco 필드유니폼</h6>
                     <div class="player-uniform">
                         <div class="uniform-color">
-                            <img src="img/유니폼 검정.png" alt="">
+                            <img src="img/유니폼검정.png" alt="">
                             <p class="color-taxt">Black</p>
-                            <button class="uniform-button fd-black">자세히보기</button>
-                            <div class="uniform-detail" style="display: none;">
-                                <img src="img/유니폼 검정.png" alt="">
-                            </div>
+                            <button class="uniform-button" id="fd-black-button" key="fd-black">자세히보기</button>
                         </div>
                         <div class="uniform-color">
-                            <img src="img/유니폼 녹색.png" alt="">
+                            <img src="img/유니폼녹색.png" alt="">
                             <p class="color-taxt">White</p>
-                            <button class="uniform-button fd-white">자세히보기</button>
-                            <div class="uniform-detail" style="display: none;">
-                                <img src="img/유니폼 녹색.png" alt="">
-                            </div>
+                            <button class="uniform-button fd-white" id="fd-white-button" key="fd-white">자세히보기</button>
                         </div>
                         <div class="uniform-color">
-                            <img src="img/유니폼 빨강.png" alt="">
-                            <p class="color-taxt">Rad</p>
-                            <button class="uniform-button fd-rad">자세히보기</button>
-                            <div class="uniform-detail" style="display: none;">
-                                <img src="img/유니폼 빨강.png" alt="">
-                            </div>
+                            <img src="img/유니폼빨강.png" alt="">
+                            <p class="color-taxt">Red</p>
+                            <button class="uniform-button fd-red" id="fd-red-button" key="fd-red">자세히보기</button>
                         </div>
                     </div>
                 </div>
@@ -738,28 +729,20 @@
                     <h6>부산Bisco GK유니폼</h6>
                     <div class="player-uniform">
                         <div class="uniform-color">
-                            <img src="img/키퍼유니폼 검정.png" class="gk" alt="">
+                            <img src="img/키퍼유니폼검정.png" class="gk" alt="">
                             <p class="color-taxt">Black</p>
-                            <button class="uniform-button gk-blck">자세히보기</button>
-                            <div class="uniform-detail" style="display: none;">
-                                <img src="img/키퍼유니폼 검정.png" alt="">
-                            </div>
+                            <button class="uniform-button gk-black" id="gk-black-button" key="gk-black">자세히보기</button>
                         </div>
                         <div class="uniform-color">
-                            <img src="img/키퍼유니폼 녹색.png" class="gk" alt="">
+                            <img src="img/키퍼유니폼녹색.png" class="gk" alt="">
                             <p class="color-taxt">Green</p>
-                            <button class="uniform-button gk-green">자세히보기</button>
-                            <div class="uniform-detail" style="display: none;">
-                                <img src="img/키퍼유니폼 녹색.png" alt="">
-                            </div>
+                            <button class="uniform-button gk-green" id="gk-green-button" key="gk-green">자세히보기</button>
+
                         </div>
                         <div class="uniform-color">
-                            <img src="img/키퍼유니폼 파랑.png" class="gk" alt="">
+                            <img src="img/키퍼유니폼파랑.png" class="gk" alt="">
                             <p class="color-taxt">Blue</p>
-                            <button class="uniform-button gk-blue">자세히보기</button>
-                            <div class="uniform-detail" style="display: none;">
-                                <img src="img/키퍼유니폼 파랑.png" alt="">
-                            </div>
+                            <button class="uniform-button gk-blue" id="gk-blue-button" key="gk-blue">자세히보기</button>
                         </div>
                     </div>
                 </div>
@@ -802,16 +785,28 @@
                 <p>팩스번호:051-851-7501</p>
             </div>
         </footer>
-        <div class="modal" id="playerModal">
-            <div class="profile-sup">
-                <div class="sup-text">
-                </div>
-                <img src="" alt="" id="modalPlayerImage">
+    </div>
+    <div class="modal" id="playerModal">
+        <div class="profile-sup">
+            <div class="sup-text">
             </div>
+            <img src="" alt="" id="modalPlayerImage">
         </div>
+    </div>
+    <div class="uniform-modal modal" id="modal-uniform">
+        <div class="modal-inner-container">
+
+            <h3>유니폼 상세이미지</h3>
+            <div class="img-container">
+                <img src="" alt="" id="uniform-img">
+            </div>
+        <p class="uniform-text">아무곳이나 클릭하시면 닫힙니다</p>
+        </div>
+
     </div>
     <script src="선수명단.js"></script>
     <script src="index.js"></script>
+    <script src="유니폼.js"></script>
     <script>
         const contentWebper = document.getElementById('content-webper');
         let bodyHeight;
