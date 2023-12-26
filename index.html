@@ -19,6 +19,7 @@
                 <span class="ham2"></span> 
                 <span class="ham3"></span>
             </button>
+            <div class="up-button"></div>
             <div class="hambutton-cilck">
                 <ul class="hammenu">
                     <li class="hammenulist">
@@ -807,6 +808,7 @@
     <script src="선수명단.js"></script>
     <script src="index.js"></script>
     <script src="유니폼.js"></script>
+    <script src="Intersection.js"></script>
     <script>
         const contentWebper = document.getElementById('content-webper');
         let bodyHeight;
@@ -840,6 +842,14 @@
             }
         }
     
+
+
+        // 테스트용 코드
+
+        const contents = document.querySelector('.history-title-content')
+        window.addEventListener('scroll', ()=>{
+            console.log(contents.getBoundingClientRect())
+        })
     </script>
 </body>
 </html>

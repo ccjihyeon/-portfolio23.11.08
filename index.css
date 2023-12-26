@@ -10,9 +10,14 @@
     font-family : 'giants-regular';
     src : url(폰트/Giants-Regular.otf)
   }
+  @font-face{
+    font-family: 'nanumgothic-Light';
+    src: url(폰트/NanumGothicLight.otf);
+  }
   body{
     height: auto;
     overflow-x: hidden;
+    font-family: 'nanumgothic-Light';
   }
 header{
     display: flex;
@@ -138,7 +143,9 @@ header{
 .hammenulist.nav-active {
     color: #1CB5E0;
 }
-
+.up-button{
+    display: none;
+}
 section{
     flex-shrink: 0;
     padding-top: 91px;
@@ -154,11 +161,12 @@ section{
 }
 video{
     width:100vw;
+    height: 82%;
     object-fit: contain;
 }
 .news{
     width: 100vw;
-    height: 90px;
+    height: 162px;
     padding: 0 16px;
     display: flex;
     justify-content: center;
@@ -482,14 +490,13 @@ h3{
     font-weight: 400;
 }
 .profile-taxt{
-    width: 180px;
     display:flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    gap: 2px;
+    gap: 82px;
     position: absolute;
-    transform: translateY(220%);
+    transform: translateY(280%);
     justify-content: space-between;
 }
 .player-profile > img {
@@ -498,6 +505,8 @@ h3{
 }
 .modal{ 
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100vw;
     height: 100vh;
     background: #000000BB;
@@ -571,8 +580,8 @@ h3{
     justify-content: center;
 }
 .staff-profile > img{
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
 }
 .staff-taxt{
     width: 180px;
@@ -601,7 +610,6 @@ h3{
 }
 
 #history{
-
     height: 100vh;
     background-color: #052952;
     display: flex;
@@ -673,7 +681,8 @@ h4{
     gap: 30px;
     border-radius: 16px;
     background: rgba(29, 149, 236, 0.43);
-    
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
 .history-title{
     display: flex;
@@ -704,7 +713,10 @@ h5{
     font-family: 'giants-regular';
     font-size: 26px;
 }
-
+.history-title-content .visible {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
 .grade{
     font-size: 30px;
     font-family: 'giants-bold';
@@ -806,6 +818,11 @@ h6{
     color: #F5F5F5;
     align-items: center;
 }
+.modal-inner-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 
 
 footer{
@@ -869,6 +886,31 @@ footer{
     }
     .hambutton{
         display: none;
+    }
+    .up-button{
+        display: block;
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background-color: #3498db;
+        right: 10px;
+        transform: translateY(550%)
+    }
+    .up-button::before{
+        content: "";
+        position: absolute;
+        top: 57%;
+        left: 57%;
+        transform: translate(-50%, -50%) rotate(115deg);
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 6px 12px 8px; /* 화살표의 크기 조절 */
+        border-color: transparent transparent #fff transparent;
+    }
+    .up-button:hover{
+        cursor: pointer;
     }
     #header-contents{
         align-items: center;
@@ -1039,7 +1081,8 @@ footer{
         padding-right: 32px;
     }
     .profile-taxt{
-        width: 100px;
+        gap: 26px;
+        transform: translateY(226%);
     }
     .player-name{
         font-size: 12px;
@@ -1077,7 +1120,9 @@ footer{
         gap: 32px;
     }
     .history-title-wrapper{
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
     }
     .team-symbol{
         padding: 32px;
@@ -1097,6 +1142,12 @@ footer{
     }
 }
 @media screen and (max-width:800px) {
+    .main-vidio{
+        height: 434px;
+    }
+    video{
+        height: 244px;
+    }
     .news{
         gap: 0;
     }
