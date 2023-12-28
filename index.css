@@ -161,13 +161,12 @@ section{
 }
 video{
     width:100vw;
-    height: 82%;
+    height: 90%;
     object-fit: contain;
 }
 .news{
     width: 100vw;
-    height: 162px;
-    padding: 0 16px;
+    height: 88px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -449,7 +448,7 @@ h3{
     align-items: center;
     align-content: center;
     justify-content: center;
-    gap: 32px;
+    gap: 80px;
     flex-wrap: wrap;
     flex-shrink: 0;
 }
@@ -539,12 +538,12 @@ h3{
 .position-name>p{
     color: #121212;
     font-family: 'giants-regular';
-    font-size: larger;
+    font-size: xx-large;
     font-weight: 400;
 }
 .number-name{
     display: flex;
-    font-size: x-large;
+    font-size: xx-large;
     font-family: 'giants-bold';
     color: #121212;
     gap: 6px;
@@ -560,7 +559,7 @@ h3{
 }
 .personal{
     display: flex;
-    font-size: small;
+    font-size: medium;
     font-family: 'giants-regular';
     justify-content: center;
     gap: 16px;
@@ -682,7 +681,8 @@ h4{
     border-radius: 16px;
     background: rgba(29, 149, 236, 0.43);
     opacity: 0;
-    transition: opacity 1s ease-in-out;
+    transform: translateY(379px);
+    transition: 1s ease-in-out;
 }
 .history-title{
     display: flex;
@@ -713,9 +713,9 @@ h5{
     font-family: 'giants-regular';
     font-size: 26px;
 }
-.history-title-content .visible {
+.history-title-content.visible {
     opacity: 1;
-    transition: opacity 1s ease-in-out;
+    transform: none;
 }
 .grade{
     font-size: 30px;
@@ -747,6 +747,14 @@ h6{
     align-items: center;
     border-radius: 16px;
     background-color: rgba(255, 255, 255, 0.50);
+    transform: translateY(-200px);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.cl.visible {
+    opacity: 1;
+    transform: none;
 }
 .cl-rogo{
     display: flex;
@@ -1102,6 +1110,15 @@ footer{
     .staff-taxt{
         width: 100px;    
     }
+    .position-name>p{
+        font-size: large;
+    }
+    .number-name{
+        font-size: large;
+    }
+    .personal{
+        font-size: small;
+    }
     #history{
         height: auto;
         overflow: auto;
@@ -1123,6 +1140,9 @@ footer{
         flex-direction: row;
         justify-content: center;
         flex-wrap: wrap;
+    }
+    .history-title-content.visible {
+        opacity: 1;
     }
     .team-symbol{
         padding: 32px;

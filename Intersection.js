@@ -18,5 +18,28 @@ document.addEventListener('DOMContentLoaded', function () {
         threshold: 0.5
     });
 
-    observer.observe(historySection);
+    for (const iterator of historySection) {
+        observer.observe(iterator);
+    }
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    const clElement = document.querySelector('.cl');
+
+    function handleIntersection(entries, observer) {
+        entries.forEach(entry => {
+            const target = entry.target;
+            if (entry.isIntersecting) {
+                target.classList.add('visible');
+            }
+        });
+    }
+
+    const observer = new IntersectionObserver(handleIntersection, {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.5
+    });
+
+    observer.observe(clElement);
 });

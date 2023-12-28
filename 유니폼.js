@@ -27,5 +27,4 @@
   uniformModal.addEventListener('click', function () {
     uniformModal.style.display = 'none';
   });
-
  
