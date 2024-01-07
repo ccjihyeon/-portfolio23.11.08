@@ -747,14 +747,6 @@ h6{
     align-items: center;
     border-radius: 16px;
     background-color: rgba(255, 255, 255, 0.50);
-    transform: translateY(-200px);
-    opacity: 0;
-    transition: 0.5s;
-}
-
-.cl.visible {
-    opacity: 1;
-    transform: none;
 }
 .cl-rogo{
     display: flex;
@@ -898,24 +890,16 @@ footer{
     .up-button{
         display: block;
         position: absolute;
-        width: 25px;
-        height: 25px;
+        width: 50px;
+        height: 50px;
         border-radius: 50%;
         background-color: #3498db;
         right: 10px;
-        transform: translateY(550%)
     }
     .up-button::before{
-        content: "";
         position: absolute;
         top: 57%;
         left: 57%;
-        transform: translate(-50%, -50%) rotate(115deg);
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 0 6px 12px 8px; /* 화살표의 크기 조절 */
-        border-color: transparent transparent #fff transparent;
     }
     .up-button:hover{
         cursor: pointer;
@@ -924,15 +908,11 @@ footer{
         align-items: center;
         justify-content: center;
     }
-
     #content-webper {
         flex-direction: column;
         position: relative;
         width: 100%;
     }
-
-
-
     .news{
         height: 25%;
         gap: 50px;  
