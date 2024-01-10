@@ -515,6 +515,7 @@ h3{
 }
 .profile-sup{
     width: 40%;
+    padding: 16px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -734,6 +735,15 @@ h5{
     flex-direction: column;
     gap: 18px;
 }
+.symbol{
+    opacity: 0;
+    transform: translateY(200px);
+    transition: 1s ease-in-out
+}
+.symbol.visible{
+    opacity: 1;
+    transform: none;  
+}
 h6{
     color: #121212;
     text-align: center;
@@ -893,8 +903,10 @@ footer{
         width: 50px;
         height: 50px;
         border-radius: 50%;
-        background-color: #3498db;
-        right: 10px;
+        background-color: #3498db80;
+        right: 16px;
+        bottom: -800px;
+
     }
     .up-button::before{
         position: absolute;
@@ -903,6 +915,10 @@ footer{
     }
     .up-button:hover{
         cursor: pointer;
+    }
+    .up-button>img{
+        width: 100%;
+        object-fit: contain;
     }
     #header-contents{
         align-items: center;

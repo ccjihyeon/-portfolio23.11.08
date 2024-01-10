@@ -1,18 +1,18 @@
 const playersData = [
-    { number: 23, name: "이미경", birthdate: "1991.10", position: "CB", height: 165, weight: 55, joinDate: "2022.5.1",affiliation:"오므론(일본)"},
-    { number: 27, name: "조하랑", birthdate: "1991.07", position: "LW", height: 168, weight: 65, joinDate: "2022.2.1",affiliation:"대구시청"},
     { number: 17, name: "김진이", birthdate: "1993.06", position: "LB", height: 180, weight: 83, joinDate: "2021.1.1",affiliation:"경남개발공사"},
-    { number: 11, name: "이한솔", birthdate: "1995.08", position: "PV", height: 180, weight: 80, joinDate: "2023.3.1",affiliation:"SK슈글즈"},
-    { number: 3, name: "함지선", birthdate: "1996.04", position: "RW", height: 158, weight: 52, joinDate: "2017.1.1",affiliation:"광주도시공사"},
     { number: 19, name: "김다영", birthdate: "1996.09", position: "LB", height: 170, weight: 56, joinDate: "2020.12.1",affiliation:"소니(일본)"},
     { number: 9, name: "정가희", birthdate: "1997.08", position: "LW", height: 155, weight: 49, joinDate: "2016.1.1",affiliation:"인천비즈니스고"},
     { number: 10, name: "송해리", birthdate: "1997.10.", position: "PV", height: 173, weight: 68, joinDate: "2021.8.1",affiliation:"인천시청"},
     { number: 7, name: "신진미", birthdate: "1998.06", position: "CB", height: 167, weight: 60, joinDate: "2021.1.1",affiliation:"한국체육대학교"},
     { number: 86, name: "김수연", birthdate: "1998.06", position: "GK", height: 182, weight: 70, joinDate: "2023.3.1",affiliation:"SK슈글즈"},
+    { number: 88, name: "최유나", birthdate: "2001.07", position: "GK", height: 180, weight: 75, joinDate: "2024.1.1",affiliation:"한국체육대학교"},
+    { number: 91, name: "이지우", birthdate: "2001.07", position: "PV", height: 178, weight: 73, joinDate: "2023.11.1",affiliation:"경남개발공사"},
     { number: 77, name: "박시연", birthdate: "2001.10", position: "RW", height: 169, weight: 73, joinDate: "2020.1.1",affiliation:"경남체고"},
-    { number: 20, name: "지은혜", birthdate: "2003.02", position: "RB", height: 167, weight: 62, joinDate: "2022.1.1",affiliation:"황지정산고"},
     { number: 16, name: "이주현", birthdate: "2003.02", position: "GK", height: 174, weight: 75, joinDate: "2022.1.1",affiliation:"의정부여고"},
-    { number: 13, name: "홍주예", birthdate: "2004.02", position: "LW", height: 172, weight: 54, joinDate: "2023.1.1",affiliation:"경남체고"}
+    { number: 39, name: "이혜원", birthdate: "2004.05", position: "LB", height: 169, weight: 68, joinDate: "2024.1.1",affiliation:"대구시청"},
+    { number: 14, name: "황수미", birthdate: "2004.05", position: "RB", height: 178, weight: 64, joinDate: "2024.1.1",affiliation:"정읍여고"},
+    { number: 96, name: "조아나", birthdate: "1996.07", position: "RB", height: 183, weight: 76, joinDate: "2024.1.1",affiliation:""},
+    { number: 99, name: "알리나", birthdate: "1997.08", position: "LB", height: 183, weight: 78, joinDate: "2024.1.1",affiliation:""}  
   ];
 
   const playersByName = {};
