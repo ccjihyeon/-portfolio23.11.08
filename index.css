@@ -905,8 +905,7 @@ footer{
         border-radius: 50%;
         background-color: #3498db80;
         right: 16px;
-        bottom: -800px;
-
+        bottom: ;
     }
     .up-button::before{
         position: absolute;
