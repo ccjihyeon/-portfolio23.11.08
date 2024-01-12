@@ -18,7 +18,7 @@ function historyIneraction(){
     const observer = new IntersectionObserver(handleIntersection, {
         root: null,
         rootMargin: '0px',
-        threshold: 0.5
+        threshold: 0.2
     });
     
     for (const iterator of historySection) {
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const observer = new IntersectionObserver(handleIntersection, {
         root: null,
         rootMargin: '0px',
-        threshold: 0.5
+        threshold: 0
     });
     teamSymbolSection.forEach((symbol)=>{
 

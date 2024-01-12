@@ -439,7 +439,7 @@ h3{
     font-size: 26px;
     font-style: normal;
     line-height: normal;
-    padding:32px;
+    padding-top:32px;
 }
 .players{
     display: flex;
@@ -899,13 +899,14 @@ footer{
     }
     .up-button{
         display: block;
-        position: absolute;
+        position: fixed;
         width: 50px;
         height: 50px;
         border-radius: 50%;
         background-color: #3498db80;
         right: 16px;
-        bottom: ;
+        bottom: 32px;
+        z-index: 100;
     }
     .up-button::before{
         position: absolute;
@@ -1248,8 +1249,12 @@ footer{
     .history-title-content {
         width: 100%;
     }
+    .history-title-content{
+        transform: translateY(200px);
+    }
     .team-symbol{
         background-image:none;
+        background-color:rgb(12, 83, 134);
     }
     .cl-rogo{
         gap: 16px;
@@ -1261,6 +1266,7 @@ footer{
     .player-uniform{
         flex-direction: column;
     }
+
     h6{
         font-size: 20px;
         padding: 16px;

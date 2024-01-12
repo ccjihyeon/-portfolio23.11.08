@@ -25,16 +25,16 @@
             <div class="hambutton-cilck">
                 <ul class="hammenu">
                     <li class="hammenulist">
-                        <span class="hamspan">구단소개</span>
+                        <span class="hamspan">경기일정</span>
                     </li>
                     <li class="hammenulist">
                         <span class="hamspan">선수소개</span>
                     </li>
                     <li class="hammenulist">
-                        <span class="hamspan">구단상징</span>
+                        <span class="hamspan">구단소개</span>
                     </li>
                     <li class="hammenulist">
-                        <span class="hamspan">경기일정</span>
+                        <span class="hamspan">구단상징</span>
                     </li>
                     <li class="hammenulist">
                         <span class="hamspan">스폰서</span>
@@ -811,47 +811,7 @@
     <script src="index.js"></script>
     <script src="유니폼.js"></script>
     <script src="Intersection.js"></script>
-    <script>
-        const contentWebper = document.getElementById('content-webper');
-        let bodyHeight;
-    
-        
-        HorizentalPage();
-                
-        window.addEventListener('resize', HorizentalPage)
-
-        function addScrollEvent() {
-            document.body.style.height = `${bodyHeight - (window.innerWidth-window.innerHeight)}px`
-            window.addEventListener('scroll', scrollHor)
-        }
-        function scrollHor()  {
-            contentWebper.style.transform = `translateX(-${window.scrollY}px)`
-        }
-
-        function HorizentalPage() {
-            bodyHeight = contentWebper.getBoundingClientRect().width;
-         
-            let sum = 0 ;
-            for(let i = 0 ; i < contentWebper.childElementCount; i ++) {
-                console.log(contentWebper.children[i].getBoundingClientRect().width)
-            }
-
-            document.body.style.height = 'auto';
-            window.removeEventListener('scroll',scrollHor);
-            contentWebper.style.transform = `translateX(0px)`
-            if(window.innerWidth >= 1366) {
-                addScrollEvent()
-            }
-        }
-    
-
-
-        // 테스트용 코드
-
-        const contents = document.querySelector('.history-title-content')
-        window.addEventListener('scroll', ()=>{
-            console.log(contents.getBoundingClientRect())
-        })
-    </script>
+    <script src="hamButton.js"></script>
+    <script src="scroll.js"></script>
 </body>
 </html>
