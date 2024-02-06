@@ -1,18 +1,18 @@
 @font-face {
     font-family : 'giants-bold';
-    src : url(/폰트/Giants-Bold.otf)
+    src : url(폰트/Giants-Bold.otf)
   }
 @font-face {
     font-family : 'giants-inline';
-    src : url(/폰트/Giants-Inline.otf)
+    src : url(폰트/Giants-Inline.otf)
   }
 @font-face {
     font-family : 'giants-regular';
-    src : url(/폰트/Giants-Regular.otf)
+    src : url(폰트/Giants-Regular.otf)
   }
   @font-face{
     font-family: 'nanumgothic-Light';
-    src: url(/폰트/NanumGothicLight.otf);
+    src: url(폰트/NanumGothicLight.otf);
   }
   body{
     height: auto;
@@ -211,7 +211,7 @@ video{
     width: 50%;
     height: 100vh;
     background-repeat: no-repeat;
-    background-image:linear-gradient(13deg, #0000007a, #0000007a),url(/img/경기일정사진.jpg);
+    background-image:linear-gradient(13deg, #0000007a, #0000007a),url(img/경기일정사진.jpg);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -728,7 +728,7 @@ h5{
     display: flex;
     justify-content: center;
     align-items:center;
-    background-image: linear-gradient(13deg, rgba(0, 0, 0, 0.48), rgba(0, 0, 0, 0.48)),url(/img/유니폼뒷사진.jpg);
+    background-image: linear-gradient(13deg, rgba(0, 0, 0, 0.48), rgba(0, 0, 0, 0.48)),url(img/유니폼뒷사진.jpg);
     background-repeat:no-repeat;
     background-size:cover;
     background-color:#052952;    
